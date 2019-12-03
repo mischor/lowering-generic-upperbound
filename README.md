@@ -1,5 +1,8 @@
 # lowering-generic-upperbound
 
+## Preliminaries
+Using Java 8
+
 ## Basic type hierarchy
 * TOP - the top class
    * Annotation - a subtype of TOP
