@@ -35,7 +35,7 @@ you can pass in the generic upper bound (the 4th statement) which also works.
 
 ## What I'm looking for
 What I'd like to find is some what to change (in Framework_top) the definition of build_annotation_U to specify
-that the returned value is not <U extends T> but rather <U extends T extends Annotation>,
+that the returned value is not `<U extends T>` but rather `<U extends T extends Annotation>`,
 essentially lowering the upper bound by default from TOP to Annotation, but also keeping any type that is passed in
 at compile time via lines in Demo like the 1st statement or the 4th statement in run().
 
