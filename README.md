@@ -17,8 +17,10 @@ These are experiments)
 
 The Framework takes a generic arg: T extends TOP.
 
+## Demo class
 The Demo class shows some code instantiating instances of the framework.
 
+### setups - one passes in at compile-time a class
 There are 2 "setup" methods in Demo; one (with the class argument) manages to pass along **at 
 compile time** the type of the class argument, as a generic arg.
 
@@ -31,6 +33,7 @@ The other setup method (taking 0 args) has no specification of the generic type 
 only knows the upper bound of TOP, so a cast is needed (the 3rd statement), or
 you can pass in the generic upper bound (the 4th statement) which also works.
 
+## What I'm looking for
 What I'd like to find is some what to change (in Framework_top) the definition of build_annotation_U to specify
 that the returned value is not <U extends T> but rather <U extends T extends Annotation>,
 essentially lowering the upper bound by default from TOP to Annotation, but also keeping any type that is passed in
