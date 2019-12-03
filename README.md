@@ -16,8 +16,8 @@ The Framework takes a generic arg: T extends TOP.
 
 The Demo class shows some code instantiating instances of the framework.
 
-There are 2 "setup" methods in Demo; one (with the class argument) manages to pass along at 
-compile time the type of the class argument, as a generic arg.
+There are 2 "setup" methods in Demo; one (with the class argument) manages to pass along **at 
+compile time** the type of the class argument, as a generic arg.
 
 * You can see an instance of this being passed along at compile time in the first
 statement in the run() method. 
